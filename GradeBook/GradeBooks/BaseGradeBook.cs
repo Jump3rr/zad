@@ -12,13 +12,13 @@ namespace GradeBook.GradeBooks
     public abstract class BaseGradeBook
     {
         public string Name { get; set; }
-        public bool isWeighted { get; set; }
+        public bool IsWeighted { get; set; }
         public List<Student> Students { get; set; }
 
-        public BaseGradeBook(string name, bool IsWeighted)
+        public BaseGradeBook(string name, bool isWeighted)
         {
             Name = name;
-            isWeighted = IsWeighted;
+            IsWeighted = isWeighted;
             Students = new List<Student>();
         }
         public GradeBookType Type
@@ -26,10 +26,10 @@ namespace GradeBook.GradeBooks
             get; set;
         }
 
-        public bool IsWeighted
+        /*public bool IsWeighted
         {
             get; set;
-        }
+        }*/
 
         public void AddStudent(Student student)
         {
